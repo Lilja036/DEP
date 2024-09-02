@@ -1,0 +1,26 @@
+METADATA:
+
+SuperStore dataset contains following columns;
+
+Order ID: Identify each order uniquely.
+Order Date: Identify specific date of the order.
+Ship Date: Identify specific delivery date of the order.
+Ship Mode: Whether ship mode is same day, first or second class, standard class.
+Customer ID: Uniquely assign to each customer.
+Customer Name: Name of the customer
+Segment: Whether the customer is consumer, corporate or home office.
+Country: Country where customer belong.
+City: City where customer belong.
+State: State where customer belong.
+Region: Region where customer belong.
+Product ID: Unique number assigned to each product.
+Category: Define different categories of the product like office supplies, furniture and technology.
+Sub Category: There are various sub categories e.g. art, bookcases, chairs, accessories etc.
+Product Name: Show name of the product.
+Sales: Show sales for each product.
+Quantity: Identify amount of product.
+Profit: Show profit generated from each product.
+Returns: 1 represent that product is returned and 0 means not. 
+Payment Mode: Show various payment methods like cards, payment through online banking, COD (cash on delivery)
+Avg_Shipdays: Average days to deliver product to the customer, this column is calculated using  
+DAX query i.e Avg_Shipdays = DATEDIFF('SuperStore_Sales_Dataset'[Order Date],'SuperStore_Sales_Dataset'[Ship Date],DAY)
